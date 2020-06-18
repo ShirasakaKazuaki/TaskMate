@@ -16,13 +16,15 @@ TaskMateはAWSに、次のような構成でデプロイしています。
 
 #### インフラ環境
 - EC2/ MySQL/ Nginx/ Unicorn
+（冗長構成はMathmateで構築できるようになったので、あくまで簡易的に構築しました。）
 ![Taskmate_構成](https://user-images.githubusercontent.com/63136727/84980152-42970800-b16c-11ea-8360-3f4c3a7a1f2a.jpg)
 
 
-#### 言語/フレームワーク
+#### 言語/フレームワークなど
 - Ruby/ Ruby on Rails
 - Scss/ Bootstrap
 - Vue.js
+- webpack
 
 #### 開発環境
 - Docker
