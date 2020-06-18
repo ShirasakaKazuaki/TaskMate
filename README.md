@@ -1,24 +1,37 @@
-# README
+![Taskamte_logo](https://user-images.githubusercontent.com/63136727/84980476-29db2200-b16d-11ea-9d6c-bbe1ec4f95b8.jpg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# TaskMate: タスク管理アプリ
+---
+Mathmate作成中に気になった点や、導入してみたかった技術を使って作成したタスク管理アプリです。
+バックエンドをRuby on Rails、フロントエンドはVue.jsを採用し、RESTfulAPIを使って実装してあります。
+デザインや機能性がかなり稚拙なものになってしまいましたが、Vue.jsとRESTfulAPIを使った実装についてはかなり理解を深めることができました。
 
-Things you may want to cover:
+## TaskMateの構成
+---
 
-* Ruby version
+### 構成
+--- 
+TaskMateはAWSに、次のような構成でデプロイしています。
 
-* System dependencies
 
-* Configuration
+#### インフラ環境
+- EC2/ MySQL/ Nginx/ Unicorn
+（冗長構成はMathmateで構築できるようになったので、あくまで簡易的に構築しました。）
+![Taskmate_構成](https://user-images.githubusercontent.com/63136727/84980152-42970800-b16c-11ea-8360-3f4c3a7a1f2a.jpg)
 
-* Database creation
 
-* Database initialization
+#### 言語/フレームワークなど
+- Ruby/ Ruby on Rails
+- Scss/ Bootstrap
+- Vue.js
+- webpack
 
-* How to run the test suite
+#### 開発環境
+- Docker
+- docker-compose
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 機能一覧
+---
+- タスク投稿機能
+- タスク完了機能
+- 画面遷移（Ajax）
